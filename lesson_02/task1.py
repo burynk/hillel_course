@@ -1,6 +1,4 @@
-print("Введіть ціле чотиризначне число: ")
-input_number = input()
-number = int(input_number)
+number = int(input("Введіть ціле чотиризначне число: "))
 print(number//1000)
 print(number//100%10)
 print(number%100//10)
