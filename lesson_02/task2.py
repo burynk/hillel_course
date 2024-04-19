@@ -1,0 +1,10 @@
+# без маніпуляцій з стрінгами
+print("Введіть ціле пʼятизначне число: ")
+input_number = input()
+number = int(input_number)
+print("Перевернуте число:")
+print(number%10)
+print(number%100//10)
+print(number//100%10)
+print(number//1000%10)
+print(number//10000)
