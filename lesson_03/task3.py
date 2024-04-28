@@ -3,14 +3,15 @@ list1 = [1, 2, 3, 4, 5, 6]
 # list1 = [1, 2, 3, 4, 5]
 # list1 = [1]
 # list1 = []
+list2 = []
 
-list_length = len(list1)
-
-if len(list1) == 0:
-    list2 = [[], []]
-elif len(list1) % 2 == 1:
-    list2 = [list1[: int(list_length / 2 + 1)], list1[int(list_length / 2 + 1) :]]
+if len(list1) % 2 == 0:
+    index = len(list1) // 2
+    list2.append(list1[:index])
+    list2.append(list1[index:])
 else:
-    list2 = [list1[: int(list_length / 2)], list1[int(list_length / 2) :]]
+    index = len(list1) // 2 + 1
+    list2.append(list1[:index])
+    list2.append(list1[index:])
 
 print(list2)
