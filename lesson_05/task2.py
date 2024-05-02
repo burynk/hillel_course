@@ -8,7 +8,7 @@ while input("Press (y) to continue, or any other key to exit: ") == "y":
     if action == "d":
         if number2 == 0:
             print("Cannot divide by zero, exiting")
-            break
+            continue
         else:
             result = number1 / number2
     elif action == "a":
