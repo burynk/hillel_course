@@ -1,7 +1,8 @@
 import string
 
 input = str(input("Enter a string: "))
-output = input.title()
-output = output.translate(str.maketrans("", "", string.punctuation + " "))
-output = "#" + output[:138]
+output = input.translate(str.maketrans("", "", string.punctuation))
+output = output.title()
+output = output.replace(" ", "")
+output = "#" + output[:139]
 print(output)
