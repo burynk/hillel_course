@@ -3,7 +3,7 @@ External module for the find_unique_value() function.
 """
 
 
-def find_unique_value(some_list: list) -> int:
+def find_unique_value(some_list: list) -> float:
     """
     Find a unique integer value in a list.
     :param some_list: List of numbers.

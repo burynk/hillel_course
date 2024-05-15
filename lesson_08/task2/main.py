@@ -1,6 +1,7 @@
 """
 Task 8.2. Check if a string is a palindrome.
 """
+
 from is_palindrome import is_palindrome
 
 if __name__ == "__main__":
